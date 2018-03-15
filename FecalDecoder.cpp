@@ -68,7 +68,11 @@ bool DecoderAppDataWindow::AddRecovery(uint8_t* data, unsigned row)
     if (!res.second)
         return false;
 
-    RecoveryData.push_back({ data, row });
+    RecoveryInfo info;
+    info.Data = data;
+    info.Row = row;
+    info.UsedForSolution = false;
+    RecoveryData.push_back(info);
 
     return true;
 }
