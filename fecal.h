@@ -35,7 +35,7 @@
 */
 
 // Library version
-#define FECAL_VERSION 3
+#define FECAL_VERSION 2
 
 // Tweak if the functions are exported or statically linked
 //#define FECAL_DLL /* Defined when building/linking as DLL */
